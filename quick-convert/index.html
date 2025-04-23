@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter | Celsius, Fahrenheit, Kelvin Conversion</title>
+    <meta name="description" content="A free and easy-to-use online temperature converter. Quickly convert between Celsius (°C), Fahrenheit (°F), and Kelvin (K). Get instant and accurate temperature conversions.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Temperature Converter</h1>
+        <p>Need to convert temperatures quickly and accurately? Our free online temperature converter allows you to easily switch between Celsius (°C), Fahrenheit (°F), and Kelvin (K). Simply enter the value, select the input and output units, and get your instant conversion.</p>
+        <div class="input-group">
+            <label for="value">Enter Value:</label>
+            <input type="number" id="value" placeholder="Enter temperature">
+        </div>
+        <div class="input-group">
+            <label for="fromUnit">From:</label>
+            <select id="fromUnit">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="toUnit">To:</label>
+            <select id="toUnit">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+        </div>
+        <button onclick="convertTemperature()">Convert</button>
+        <div class="result">
+            <label for="result">Result:</label>
+            <span id="result"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
